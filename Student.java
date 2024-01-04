@@ -1,8 +1,5 @@
 public class Student {
-  // address, assuming that this is the required information.
   private String name, university;
-
-  // employment, this is the optional information
   private int age;
 
   public Student(StudentBuilder studentBuilder) {
@@ -11,10 +8,7 @@ public class Student {
     this.age = studentBuilder.age;
   } 
   public static class StudentBuilder {
-    // address, assuming that this is the required information and cannot be changed.
     private final String name, university; 
-  
-    // employment, this is the optional information
     private int age = 0; 
     public StudentBuilder(String name, String university) {
       this.name = name;
