@@ -14,8 +14,8 @@ public class Student {
       this.name = name;
       this.university = university;
     }
-    public StudentBuilder addAge(int annualIncome) {
-      this.age = annualIncome;
+    public StudentBuilder addAge(int age) {
+      this.age = age;
       return this;
     }
   
